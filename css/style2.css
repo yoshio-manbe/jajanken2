@@ -1,0 +1,152 @@
+.guu{
+    position: absolute;
+    margin-left: 10%;
+    width: 15%;
+    height: 100px;
+    background:none;
+    border:0;
+    font-size:0;
+    line-height:0;
+    overflow:visible;
+    cursor:pointer;
+}
+.tyoki{
+    position: absolute;
+    margin-left: 36%;
+    width: 15%;
+    height: 100px;
+    background:none;
+    border:0;
+    font-size:0;
+    line-height:0;
+    overflow:visible;
+    cursor:pointer;
+}
+.paa{
+    position: absolute;
+    margin-left: 62%;
+    width: 15%;
+    height: 100px;
+    background:none;
+    border:0;
+    font-size:0;
+    line-height:0;
+    overflow:visible;
+    cursor:pointer;
+}
+
+.kekka{
+    position: relative; top: -500px;
+    display: flex;
+    margin-top: 0%;
+    margin-left: -6%;
+}
+
+.victory{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 800px;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 1;
+}
+.victory img{
+    width: 500px;
+    margin-left: -5%;
+    margin-top: 0px;
+}.victory h1{
+    text-align: center;
+    color: red;
+    font-size: 60px;
+    font-family: "HanziPen SC";
+}
+.victory h2{
+    position: absolute;
+    background-color: black;
+    width: 50px;
+    height: 15px;
+    margin-top: -260px;
+    margin-left: 140px;
+    font-size: 0.01px;
+    z-index: 2;
+}
+.victory h3{
+    position: absolute;
+    background-color: black;
+    width: 50px;
+    height: 15px;
+    margin-top: -250px;
+    margin-left: 390px;
+    font-size: 0.01px;
+    z-index: 2;
+}
+.victory button{
+    text-align: center;
+    width: 200px;
+    color: black;
+    font-size: 30px;
+    margin-left: 130px;
+    font-family: "HanziPen SC";
+}
+
+.aiko{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: 1000px;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 1;
+}
+.aiko img{
+    width: 500px;
+    margin-top: 100px;
+}
+.aiko button{
+    position: absolute;
+    text-align: center;
+    width: 500px;
+    color: red;
+    font-size: 50px;
+    margin-top: 0%;
+    margin-left: -100%;
+    font-family: "HanziPen SC";
+}
+
+.lose{
+    position: relative; 
+    top: 50%;
+    left: 50%;
+    margin-top: 1000px;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 1;
+}
+.lose img{
+    width: 500px;
+    margin-top: 100px;
+}
+.lose button{
+    position: absolute;
+    text-align: center;
+    width: 500px;
+    color: red;
+    font-size: 50px;
+    margin-top: 0%;
+    margin-left: -100%;
+    font-family: "HanziPen SC";
+}
+.lose h2{
+    position: absolute;
+    background-color: black;
+    width: 80px;
+    height: 30px;
+    margin-top: -220px;
+    margin-left: 200px;
+    font-size: 0.01px;
+    z-index: 2;
+}
