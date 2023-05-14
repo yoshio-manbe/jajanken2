@@ -54,3 +54,10 @@ $(function(){
         $('.area_overlay').hide();
     }
 });
+
+function scrollToTop() {
+    window.scrollTo({
+        op: 0,
+        behavior: 'smooth'
+    });
+}
