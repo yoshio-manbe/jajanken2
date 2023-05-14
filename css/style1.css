@@ -1,6 +1,10 @@
+body{
+    width: 1200px;
+    height: 2000px;
+}
 /* 日本地図DOM */
 .japan_map{
-    position: relative; top: 100px;
+    position: relative; top: 50px;
     box-sizing: border-box;
     margin: 0 auto;
     display: table;
@@ -119,4 +123,11 @@ p{
     font-family: "HanziPen SC";
     width: 600px;
     margin: 5% auto;
+}
+.location{
+    position: relative; top :100px;
+    text-align: center;
+}
+.A1{
+    display: none;
 }

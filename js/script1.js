@@ -18,7 +18,13 @@ $(function(){
         if($(this).data('id')){
             var id = $(this).data('id');
             if(id >= 1 && id <= 7){
-                window.location.href = "index2.html";
+                $(".A1").html("北海道")
+                // 要素を取得する
+                const element = document.querySelector('.A1');
+                // hiddenクラスを削除する
+                element.classList.remove('A1');
+
+                // window.location.href = "index2.html";
             } else if(id >= 8 && id <= 14){
                 window.location.href = "index3.html"
             } else if(id >= 15 && id <= 23){
