@@ -18,7 +18,9 @@ $(function(){
         var id = $(this).data('id');
         var text = $(this).text();
         console.log(text); 
-        $('.A1').html(text);
+        $('#A1').text(text);
+        $('.A1').hide(); // .A1を非表示にする
+        $('#A1').show(); // #A1を表示する
         })
     
     //表示リセット
@@ -42,4 +44,15 @@ function smoothScrollToTop() {
         top: 0,
         behavior: 'smooth'
     });
+    $('.decide').show();
+
+    var checks = document.getElementsByClassName('checks');
+            var str = '';
+
+            for ( i = 0; i < 4; i++) {
+                if ( checks[i].checked === true ) {
+                    str += checks[i].value + " ";
+                }
+            }
+            $("#check_result").html(str);
 }

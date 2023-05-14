@@ -135,30 +135,36 @@
             </div>
             <div class="check">
                 <div>
-                    <input  class="visually-hidden" type="checkbox" name="purpose"   />
+                    <input  class="checks" type="checkbox" value="野心をもった"/>
                     <label for="a">企業をしたい</label>
                 </div>
                 <div>
-                    <input class="visually-hidden" type="checkbox" name="purpose" />
+                    <input class="checks" type="checkbox" value="勤勉な"/>
                     <label for="b">お金や暮らしの勉強をしたい</label>
                 </div>
                 <div>
-                    <input class="visually-hidden" type="checkbox" name="purpose"  />
+                    <input class="checks" type="checkbox" value="自分探し中"/>
                     <label for="c">仕事を見つけたい</label>
                 </div>
                 <div>
-                    <input class="visually-hidden" type="checkbox" name="purpose"  />
+                    <input class="checks" type="checkbox" value="食べ物オタクの"/>
                     <label for="d">安心安全の食べ物について知りたい</label>
                 </div>
                 <div>
-                    <input class="visually-hidden" type="checkbox" name="purpose"  />
+                    <input class="checks" type="checkbox" value="親バカの"/>
                     <label for="e">子どものお手当について知りたい</label>
                 </div>
             </div>
         </div>
-        <button type="button" onclick="smoothScrollToTop()">提出する</button>
+        <button type="button" id="submit" onclick="smoothScrollToTop()">提出する</button>
     </div>
 
+    <div class="decide">
+        <h2>あなたは、、</h2>
+        <h3 id="location_result">ああああ</h3>
+        <h3 id="check_result">ああああ</h3>
+        <h3 id="question_result">ああああ</h3>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

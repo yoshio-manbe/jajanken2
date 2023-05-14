@@ -243,3 +243,10 @@ select {
     height: 50px;
     margin-left: 300px;
 }
+
+.decide{
+    text-align: center;
+    position: relative; top:50px;
+    display: none;
+
+}
