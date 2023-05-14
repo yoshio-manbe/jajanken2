@@ -55,9 +55,17 @@ $(function(){
     }
 });
 
-function scrollToTop() {
+function smoothScrollToTop() {
+    var div = document.getElementById("japan_map");
+    div.style.display = "none";
+    var div = document.getElementById("intro");
+    div.style.display = "none";
+    var div = document.getElementById("location");
+    div.style.display = "none";
+    var div = document.getElementById("question");
+    div.style.display = "none";
     window.scrollTo({
-        op: 0,
+        top: 0,
         behavior: 'smooth'
     });
 }

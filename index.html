@@ -8,9 +8,13 @@
     <link rel="stylesheet" href="css/style1.css">
 </head>
 <body>
-    <p>お住まいの都道府県を選んでください</p>
+    <div class="title">
+        <h1>ジャンケンの相手を決めよう！！</h1>
+    </div>
 
-    <div class="japan_map">
+    <p id="intro">お住まいの都道府県を選んでください</p>
+
+    <div class="japan_map" id="japan_map">
         <img src="images/japan.png" alt="日本地図">
         <span class="area_btn area1" data-area="1">北海道・東北</span>
         <span class="area_btn area2" data-area="2">関東</span>
@@ -93,12 +97,12 @@
         </div>
     </div>
 
-    <div class="location">
+    <div class="location" id="location">
         <h2>お住まい</h2>
         <h2 class="A1">ああああ</h2>
     </div>
     
-    <div class="question">
+    <div class="question" id="question">
         <div class="form-row" id="gender">
             <div class="form-label">
                 <label for="select">あなたの性別は？</label>
@@ -152,7 +156,7 @@
                 </div>
             </div>
         </div>
-        <button type="button" onclick="scrollToTop()">提出する</button>
+        <button type="button" onclick="smoothScrollToTop()">提出する</button>
     </div>
 
 
