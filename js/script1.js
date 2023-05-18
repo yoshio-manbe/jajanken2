@@ -91,3 +91,8 @@ function smoothScrollToTop() {
         
         $("#gender_result").html(val)
 }
+
+$(".reload").click(function(){
+    location.reload();
+})
+

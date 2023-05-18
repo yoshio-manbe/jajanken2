@@ -250,6 +250,9 @@ select {
     position: relative; top:50px;
     display: none;
 }
+.result h2{
+    font-size: 30px;
+}
 
 #location_result{
     font-size: 40px;
