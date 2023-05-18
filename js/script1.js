@@ -21,7 +21,28 @@ $(function(){
         $('#A1').text(text);
         $('.A1').hide(); // .A1を非表示にする
         $('#A1').show(); // #A1を表示する
-        })
+        
+        if($(this).data('id')){
+            var id = $(this).data('id');
+            if(id >= 1 && id <= 7){
+                $("#location_result").text("寒い国の")
+            } else if(id >= 8 && id <= 14){
+                $("#location_result").text("関東の")
+            } else if(id >= 15 && id <= 23){
+                $("#location_result").text("日本の真ん中の")
+            } else if(id >= 24 && id <= 30){
+                $("#location_result").text("関西の")
+            } else if(id >= 31 && id <= 35){
+                $("#location_result").text("中国の")
+            } else if(id >= 36 && id <= 39){
+                $("#location_result").text("四国の") 
+            } else if(id >= 40 && id <= 46){
+                $("#location_result").text("九州の")
+            } else if(id === 47){
+                $("#location_result").text("琉球の")
+            } 
+        }
+    })
     
     //表示リセット
     function prefReset(){
@@ -44,15 +65,29 @@ function smoothScrollToTop() {
         top: 0,
         behavior: 'smooth'
     });
-    $('.decide').show();
+    $('.result').show();
+    $('.choice').show();
 
     var checks = document.getElementsByClassName('checks');
             var str = '';
 
-            for ( i = 0; i < 4; i++) {
+            for ( i = 0; i < 5; i++) {
                 if ( checks[i].checked === true ) {
                     str += checks[i].value + " ";
                 }
             }
             $("#check_result").html(str);
+
+    // 年齢のvalue取得
+    var obj = document.getElementById("age");
+    var idx = obj.selectedIndex;       //インデックス番号を取得
+    var val = obj.options[idx].value;  //value値を取得
+            
+        $("#age_result").html(val)
+    // 性別のvalue取得
+    var obj = document.getElementById("gender");
+    var idx = obj.selectedIndex;       //インデックス番号を取得
+    var val = obj.options[idx].value;  //value値を取得
+        
+        $("#gender_result").html(val)
 }

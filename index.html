@@ -103,29 +103,29 @@
     </div>
     
     <div class="question" id="question">
-        <div class="form-row" id="gender">
+        <div class="form-row" >
             <div class="form-label">
                 <label for="select">あなたの性別は？</label>
             </div>
             <select name="gender" id="gender">
                 <option value="">--選択してください--</option>
-                <option value="a">男性</option>
-                <option value="b">女性</option>
-                <option value="c">中立</option>
-                <option value="d">そういう概念がない</option>
+                <option value="漢">男性</option>
+                <option value="ビューティフォーウーマン">女性</option>
+                <option value="人類皆平等">中立</option>
+                <option value="仙人">そういう概念がない</option>
             </select>
         </div>
-        <div class="form-row" id="age">
+        <div class="form-row" >
             <div class="form-label">
                 <label for="select">あなたの年代は？</label>
             </div>
-            <select name="animal" id="select">
+            <select name="age" id="age">
                 <option value="">--選択してください--</option>
-                <option value="a">１０代</option>
-                <option value="b">２０代</option>
-                <option value="c">３０代</option>
-                <option value="d">４０代</option>
-                <option value="e">５０代以降</option>
+                <option value="ティーンエイジャー">１０代</option>
+                <option value="ザ・若者">２０代</option>
+                <option value="働き盛り">３０代</option>
+                <option value="落ち着き">４０代</option>
+                <option value="レジェンド">５０代以降</option>
             </select>
         </div>
         <div class="form-row">
@@ -143,7 +143,7 @@
                     <label for="b">お金や暮らしの勉強をしたい</label>
                 </div>
                 <div>
-                    <input class="checks" type="checkbox" value="自分探し中"/>
+                    <input class="checks" type="checkbox" value="自分探し中の"/>
                     <label for="c">仕事を見つけたい</label>
                 </div>
                 <div>
@@ -159,11 +159,18 @@
         <button type="button" id="submit" onclick="smoothScrollToTop()">提出する</button>
     </div>
 
-    <div class="decide">
+    <div class="result">
         <h2>あなたは、、</h2>
-        <h3 id="location_result">ああああ</h3>
-        <h3 id="check_result">ああああ</h3>
-        <h3 id="question_result">ああああ</h3>
+        <h3 id="location_result">ホームレス</h3>
+        <h3 id="check_result">伸び代だらけの</h3>
+        <h3 id="age_result">不老不死</h3>
+        <h3 id="gender_result">人を超越した者</h3>
+    </div>
+
+    <div class="choice">
+        <h2>そんなあなたに合う相手を決めるよ！！</h2>
+        <button class="reload">やり直す</button>
+        <button>このまま進む</button>
     </div>
 
 

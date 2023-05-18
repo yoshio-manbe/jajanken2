@@ -139,6 +139,7 @@ p{
 }
 .A1{
     display: none;
+    color: orange;
 }
 
 .question{
@@ -244,9 +245,31 @@ select {
     margin-left: 300px;
 }
 
-.decide{
+.result{
     text-align: center;
     position: relative; top:50px;
     display: none;
+}
 
+#location_result{
+    font-size: 40px;
+    color: #166ab5;
+}
+#gender_result{
+    font-size: 40px;
+    color: orange;
+}
+#check_result{
+    font-size: 40px;
+    color: green;
+}
+#age_result{
+    font-size: 40px;
+    color: orange;
+}
+
+.choice{
+    text-align: center;
+    position: relative; top:50px;
+    display: none;
 }
