@@ -70,27 +70,46 @@ function smoothScrollToTop() {
 
     var checks = document.getElementsByClassName('checks');
             var str = '';
+            var checkboxes = $('input[type="checkbox"]');
+            var checkedCount = 0;
 
-            for ( i = 0; i < 5; i++) {
-                if ( checks[i].checked === true ) {
-                    str += checks[i].value + " ";
+            for ( var i = 0; i < checkboxes.length; i++) {
+                if ( checkboxes[i].checked === true ) {
+                    str += checkboxes[i].value + " ";
+                    checkedCount++;
                 } 
             }
+            if (checkedCount === 0){
+            $("#check_result").html("伸び代ですねぇ")
+            } else{
             $("#check_result").html(str);
+            }
 
     // 年齢のvalue取得
     var obj = document.getElementById("age");
     var idx = obj.selectedIndex;       //インデックス番号を取得
     var val = obj.options[idx].value;  //value値を取得
             
+        if (val === "") {
+        // 入力がない場合の処理
+        $("#age_result").html("年齢不詳");
+        } else {
+        // 入力がある場合の処理
         $("#age_result").html(val)
+        }
     
     // 性別のvalue取得
     var obj = document.getElementById("gender");
     var idx = obj.selectedIndex;       //インデックス番号を取得
     var val = obj.options[idx].value;  //value値を取得
         
+    if (val === "") {
+        // 入力がない場合の処理
+        $("#gender_result").html("人間？");
+        } else {
+        // 入力がある場合の処理
         $("#gender_result").html(val)
+        }
 }
 
 $(".reload").click(function(){
@@ -116,10 +135,10 @@ $(".pref_list [data-id]").click(function(){
         console.log(sum)
 
         if(sum % 2 === 0){
-            console.log("偶数")
+            console.log("２の倍数")
             window.location.href = "index.a.html"
         } else if(sum % 3 === 0 && sum % 2 !== 0){
-            console.log("奇数")
+            console.log("3の倍数")
             window.location.href = "index.d.html"
         } else{
             console.log("それ以外")
@@ -128,4 +147,8 @@ $(".pref_list [data-id]").click(function(){
     })
 
     
+})
+
+$(".start").click(function(){
+    window.location.href = "index.m.html"
 })
