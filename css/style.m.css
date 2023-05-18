@@ -1,0 +1,227 @@
+body{
+    width: 900px;
+    height: 1800px;
+    margin: auto;
+}
+p{
+    text-align: center;
+    font-size: 50px;
+    font-family: "HanziPen SC";
+}
+.chara{
+    position: relative;
+
+}
+.chara img{
+    position: absolute;
+    width: 250px;
+    margin-left: 33%;
+}
+.bar{
+    position: absolute;
+    background-color: black;
+    width: 100px;
+    height: 20px;
+    margin-top: 95px;
+    margin-left: 44%;
+    font-size: 1%;
+    z-index: 2;
+}
+
+.balloon{
+    position: relative;
+    display: inline-block;
+    color: #555;
+    text-align: center;
+    margin-top: 35%;
+    margin-left: 32%;
+    padding: 7px 10px;
+    font-size: 10px;
+    border: solid 3px #555;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.balloon:before{
+    content: "";
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    margin-left: -15px;
+    border: 12px solid transparent;
+    border-bottom: 12px solid #FFF;
+    z-index: 2;
+}
+.balloon:after {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    margin-left: -17px;
+    border: 14px solid transparent;
+    border-bottom: 14px solid #555;
+    z-index: 1;
+}
+
+.imgSample{
+    margin-left: 34%;
+    margin-top: 30px;
+}
+.sub{
+    font-size: 40px;
+    font-family: "HanziPen SC";
+    margin-left: 34%;
+}
+.button{
+    position: relative;
+}
+.guu{
+    position: absolute;
+    margin-left: 10%;
+    width: 15%;
+    height: 100px;
+    background:none;
+    border:0;
+    font-size:0;
+    line-height:0;
+    overflow:visible;
+    cursor:pointer;
+}
+.tyoki{
+    position: absolute;
+    margin-left: 36%;
+    width: 15%;
+    height: 100px;
+    background:none;
+    border:0;
+    font-size:0;
+    line-height:0;
+    overflow:visible;
+    cursor:pointer;
+}
+.paa{
+    position: absolute;
+    margin-left: 62%;
+    width: 15%;
+    height: 100px;
+    background:none;
+    border:0;
+    font-size:0;
+    line-height:0;
+    overflow:visible;
+    cursor:pointer;
+}
+
+.kekka{
+    position: relative; top: 100px;
+    display: flex;
+    margin-left: -6%;
+}
+
+.victory{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 0px;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 1;
+}
+.victory img{
+    width: 300px;
+    margin-left: -5%;
+    margin-top: 150px;
+}.victory h1{
+    text-align: center;
+    color: red;
+    font-size: 60px;
+    font-family: "HanziPen SC";
+}
+.victory h2{
+    position: absolute;
+    background-color: black;
+    width: 50px;
+    height: 15px;
+    margin-top: -330px;
+    margin-left: 50px;
+    font-size: 0.01px;
+    z-index: 2;
+}
+.victory h3{
+    position: absolute;
+    background-color: black;
+    width: 50px;
+    height: 15px;
+    margin-top: -250px;
+    margin-left: 390px;
+    font-size: 0.01px;
+    z-index: 2;
+}
+.victory button{
+    text-align: center;
+    width: 200px;
+    color: black;
+    font-size: 30px;
+    margin-left: 50px;
+    font-family: "HanziPen SC";
+}
+
+.aiko{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 100px;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 1;
+}
+.aiko img{
+    width: 500px;
+    margin-top: 150px;
+}
+.aiko button{
+    position: absolute;
+    text-align: center;
+    width: 500px;
+    color: red;
+    font-size: 50px;
+    margin-top: 12%;
+    margin-left: -100%;
+    font-family: "HanziPen SC";
+}
+
+.lose{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 200px;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 1;
+}
+.lose img{
+    width: 500px;
+    margin-top: 100px;
+}
+.lose button{
+    position: absolute;
+    text-align: center;
+    width: 500px;
+    color: red;
+    font-size: 50px;
+    margin-top: 0%;
+    margin-left: -100%;
+    font-family: "HanziPen SC";
+}
+.lose h2{
+    position: absolute;
+    background-color: black;
+    width: 80px;
+    height: 30px;
+    margin-top: -220px;
+    margin-left: 200px;
+    font-size: 0.01px;
+    z-index: 2;
+}

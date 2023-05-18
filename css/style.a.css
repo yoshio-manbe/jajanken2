@@ -1,0 +1,226 @@
+body{
+    width: 900px;
+    height: 1800px;
+    margin: auto;
+}
+p{
+    text-align: center;
+    font-size: 50px;
+    font-family: "HanziPen SC";
+}
+.chara{
+    position: relative;
+
+}
+.chara img{
+    position: absolute;
+    margin-left: 36%;
+}
+.bar{
+    position: absolute;
+    background-color: black;
+    width: 130px;
+    height: 20px;
+    margin-top: 23px;
+    margin-left: 40%;
+    font-size: 1%;
+    z-index: 2;
+}
+
+.balloon{
+    position: relative;
+    display: inline-block;
+    color: #555;
+    text-align: center;
+    margin-top: 30%;
+    margin-left: 24%;
+    padding: 7px 10px;
+    font-size: 10px;
+    border: solid 3px #555;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.balloon:before{
+    content: "";
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    margin-left: -15px;
+    border: 12px solid transparent;
+    border-bottom: 12px solid #FFF;
+    z-index: 2;
+}
+.balloon:after {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    margin-left: -17px;
+    border: 14px solid transparent;
+    border-bottom: 14px solid #555;
+    z-index: 1;
+}
+
+.imgSample{
+    margin-left: 34%;
+    margin-top: 30px;
+}
+.sub{
+    font-size: 40px;
+    font-family: "HanziPen SC";
+    margin-left: 34%;
+}
+.button{
+    position: relative;
+}
+.guu{
+    position: absolute;
+    margin-left: 10%;
+    width: 15%;
+    height: 100px;
+    background:none;
+    border:0;
+    font-size:0;
+    line-height:0;
+    overflow:visible;
+    cursor:pointer;
+}
+.tyoki{
+    position: absolute;
+    margin-left: 36%;
+    width: 15%;
+    height: 100px;
+    background:none;
+    border:0;
+    font-size:0;
+    line-height:0;
+    overflow:visible;
+    cursor:pointer;
+}
+.paa{
+    position: absolute;
+    margin-left: 62%;
+    width: 15%;
+    height: 100px;
+    background:none;
+    border:0;
+    font-size:0;
+    line-height:0;
+    overflow:visible;
+    cursor:pointer;
+}
+
+.kekka{
+    position: relative; top: 100px;
+    display: flex;
+    margin-left: -6%;
+}
+
+.victory{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 150px;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 1;
+}
+.victory img{
+    width: 300px;
+    margin-left: 0%;
+    margin-top: 50px;
+}.victory h1{
+    text-align: center;
+    color: red;
+    font-size: 60px;
+    font-family: "HanziPen SC";
+}
+.victory h2{
+    position: absolute;
+    background-color: black;
+    width: 70px;
+    height: 15px;
+    margin-top: -420px;
+    margin-left: 40px;
+    font-size: 0.01px;
+    z-index: 2;
+}
+.victory h3{
+    position: absolute;
+    background-color: black;
+    width: 50px;
+    height: 15px;
+    margin-top: -380px;
+    margin-left: 150px;
+    font-size: 0.01px;
+    z-index: 2;
+}
+.victory button{
+    text-align: center;
+    width: 200px;
+    color: black;
+    font-size: 30px;
+    margin-left: 40px;
+    font-family: "HanziPen SC";
+}
+
+.aiko{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 180px;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 1;
+}
+.aiko img{
+    width: 500px;
+    margin-top: 100px;
+}
+.aiko button{
+    position: absolute;
+    text-align: center;
+    width: 500px;
+    color: red;
+    font-size: 50px;
+    margin-top: 0%;
+    margin-left: -100%;
+    font-family: "HanziPen SC";
+}
+
+.lose{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 180px;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 1;
+}
+.lose img{
+    width: 500px;
+    margin-top: 100px;
+}
+.lose button{
+    position: absolute;
+    text-align: center;
+    width: 500px;
+    color: red;
+    font-size: 50px;
+    margin-top: 0%;
+    margin-left: -100%;
+    font-family: "HanziPen SC";
+}
+.lose h2{
+    position: absolute;
+    background-color: black;
+    width: 80px;
+    height: 15px;
+    margin-top: -280px;
+    margin-left: 280px;
+    font-size: 0.01px;
+    z-index: 2;
+}
